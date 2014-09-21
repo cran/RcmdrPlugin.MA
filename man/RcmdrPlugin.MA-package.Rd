@@ -7,8 +7,8 @@
 \tabular{ll}{
 Package: \tab RcmdrPlugin.MA-package\cr
 Type: \tab Package\cr
-Version: \tab 0.0-1\cr
-Date: \tab 2013-03-23\cr
+Version: \tab 0.0-2\cr
+Date: \tab 2014-09-21\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }
@@ -26,12 +26,13 @@ Wolfgang Viechtbauer (2010). Conducting meta-analyses in R with the metafor pack
  
 }
 \examples{
-# Installing the RcmdrPlugin.MA package (at command prompt):  install.packages('RcmdrPlugin.MA')               
+## Installing the RcmdrPlugin.MA package (at command prompt):  
+#    install.packages('RcmdrPlugin.MA')               
 
-# Once this is installed, it can be loaded by running the command:   library(RcmdrPlugin.MA)
+## Once this is installed, it can be loaded by running the command:   
+#    library(RcmdrPlugin.MA)
 
 
-# This should be done once per R session.  
 }  
 \keyword{ package }
 \seealso{

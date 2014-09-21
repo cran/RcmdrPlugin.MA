@@ -1,5 +1,7 @@
-import(MAd, Rcmdr)
+#NAMESPACE file 
 
-#importFrom(tcltk, tkfont.create, ttkprogressbar, tkwidget, setTkProgressBar)
+import(MAd, metafor,  Rcmdr)
 
-exportPattern("^[^\\.]")
+# Export all names
+#exportPattern(".")
+ exportPattern("^[^\\.]")

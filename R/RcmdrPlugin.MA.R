@@ -1,6 +1,9 @@
 
 ##== R-Commander Plug-in for Meta-Analysis  ==##
 
+#require(MAd)
+#require(metafor)
+
 .onAttach <- function(libname, pkgname){
   if (!interactive()) return()
   Rcmdr <- options()$Rcmdr
@@ -84,7 +87,7 @@ if (getRversion() >= '2.15.1') globalVariables(c('CatCompcmd',
 #aboutcmd <- citation('RcmdrPlugin.MA')
 
 aboutcmd <- function(){
-  doItAndPrint(paste("This is an R-Commander plug-in for conducting meta-analyses. This package enables the user to conduct a meta-analysis in a menu-driven, graphical user interface environment (e.g., SPSS). It uses recommended   procedures as described in The   Handbook of Research Synthesis and Meta-Analysis (Cooper, Hedges, &	Valentine, 2009). For more detail, see: http://rwiki.sciviews.org/doku.php?id=packages:cran:ma_meta-analysis \n 
+  doItAndPrint(paste("This meta-analysis package provides a menu-driven, graphical user interface environment (e.g., SPSS, CMA) for conducting a meta-analysis. It uses recommended procedures as described in The Handbook of Research Synthesis and Meta-Analysis (Cooper, Hedges, &	Valentine, 2009). For more detail, see: http://acdelre.weebly.com \n 
   To cite this packages (and supporting packages), see output in main R console window (or type commands below into the console). \n"))  
   doItAndPrint(paste("citation('RcmdrPlugin.MA')"))
   doItAndPrint(paste("citation('MAd')"))
@@ -94,9 +97,7 @@ aboutcmd <- function(){
 
 ### START ####
 
-startcmd <- function(){
-  doItAndPrint(paste("UNDER CONSTRUCTION \n")) 
-  
+startcmd <- function(){  
   doItAndPrint(paste("vignette('tutorial', package='RcmdrPlugin.MA')"))
   
 }
